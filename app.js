@@ -46,7 +46,7 @@ class UI {
     editRun(run) {
         const ui = new UI();
         const editForm = document.createElement('form');
-        editForm.classList = 'edit-run-form';
+        editForm.classList = 'edit-run-form card form';
         console.log(editForm);
         editForm.innerHTML = `
             <div class="form-field">
@@ -61,7 +61,7 @@ class UI {
                 <li>Run Time (minutes)</li>
                 <input id="minutesInputEdit" value="${run.time}" type="text">
             </div> 
-            <input type="submit" class="btn">
+            <input type="submit" class="btn btn-success">
         `;
 
 
