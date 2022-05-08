@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Run Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Run Tracker</h1>
+        <form class="run-form">
+            <div class="form-field">
+                <li>Run Title</li>
+                <input id="titleInput" type="text" maxlength="40">
+            </div>
+            <div class="form-field">
+                <li>Run Distance (km)</li>
+                <input id="distanceInput" type="text">
+            </div>
+            <div class="form-field">
+                <li>Run Time (minutes)</li>
+                <input id="minutesInput" type="text">
+            </div> 
+            <input type="submit" class="btn">
+        </form>
+    </div>
+    <table class="run-data">
+        <thead>
+            <th>Unique ID</th>
+            <th>Title</th>
+            <th>Distance (KM)</th>
+            <th>Time (Minutes)</th>
+            <th>KM / Min</th>
+            <th class="tableControl"></th>
+            <th class="tableControl"></th>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

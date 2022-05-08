@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 60px;
+}
+
+.container > h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.run-form, .edit-run-form {
+    width: 100%;
+}
+
+.form-field {
+    padding: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 8px 5px;
+    border: none;
+    background-color: black;
+    color: #ffff;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+button:active {
+    background-color: #555;
+}
+
+/* Run Table */
+.run-data {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* Validation classes */
+.error {
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.success {
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.tableControl {
+    border: none;
+}
